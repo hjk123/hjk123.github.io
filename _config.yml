@@ -1,9 +1,9 @@
 # Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
+title: 昆仔的blog
+subtitle: 记录技术的点滴
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
 description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="http://onev.cat">@onevcat</a>
+creator: <a href="hjk123.github.io">昆仔</a>
 
 url: "http://vno.onevcat.com"
 
@@ -37,11 +37,9 @@ comment:
     
 # Social
 social:
-    weibo: onevcat
-    github: onevcat
-    twitter: onevcat
-    gplus: 107108267983477358170
-    mail: onev@onevcat.com
+    weibo: 孤独的昆仔
+    github: 昆仔
+    mail: 1054389497@qq.com
 
 # Google Analytics
 ga:
