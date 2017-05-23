@@ -1,42 +1,49 @@
-name: 昆仔的博客
-description: Blogging about IT
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+# Basic
+title: Vno Jekyll
+subtitle: A blog-orientation theme for Jekyll
+welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
+description: Vno Jekyll is a port of my Ghost theme vno.
+creator: <a href="http://onev.cat">@onevcat</a>
 
-aboutPage: true
+url: "http://vno.onevcat.com"
 
-markdown: redcarpet
-highlighter: pygments
+permalink: /:year/:month/:title/
 
-paginate: 20
-baseurl: /
-domain_name: 'http://yourblog-domain.com'
-google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+# Format
+highlighter: rouge
 
-# Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
-author:         '昆仔'
-authorTwitter:  'YourTwitterUsername'
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: red
 
-permalink:       /:year/:title/
+# The blog button should not be removed.
+blog_button:
+    title: Blog
+    description: Visit blog
 
-defaults:
-    -
-        scope:
-            path: "" # empty string for all files
-            type: pages
-        values:
-            layout: default
-    -
-        scope:
-            path: "" # empty string for all files
-            type: posts
-        values:
-            layout: post
-    -
-        scope:
-            path: ""
-            type: drafts
-        values:
-            layout: post
+# Navigation buttons in the front page.
+nav:
+    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    # - {title: Another Button, description: A button, url: 'http://example.com'}
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    disqus: vno-jekyll
+    # duoshuo: 
+    
+# Social
+social:
+    weibo: onevcat
+    github: onevcat
+    twitter: onevcat
+    gplus: 107108267983477358170
+    mail: onev@onevcat.com
+
+# Google Analytics
+ga:
+    # id: your_ga_id
+    # host: your_host
