@@ -3,7 +3,7 @@ title: 昆仔的blog
 subtitle: 记录技术的点滴
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
 description: Vno Jekyll is a port of my Ghost theme vno.
-creator: <a href="hjk123.github.io">昆仔</a>
+creator: <a href="http://hjk123.github.io">昆仔</a>
 
 url: "http://vno.onevcat.com"
 
@@ -22,7 +22,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+    - {title: Projects, description: My Projects, url: 'http://hjk123.github.io'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
