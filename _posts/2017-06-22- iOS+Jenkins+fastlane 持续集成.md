@@ -46,7 +46,7 @@
 
 * 构建后操作
 
-我们有两个构建后操作，1. 上传ipa文件到fir.im来下发到测试人员 。 2. 构建成功邮件通知相关开发人员。注意：配置邮件通知的时候，在系统设置中 jenskin 管理员的邮箱配置成发送的邮箱，email notification 和 extended E-mail notification 邮箱都要配置 且配置成一样的。
+我们有两个构建后操作，1. 上传ipa文件到fir.im来下发到测试人员 。 2. 构建成功邮件通知相关开发人员。注意：1. 配置邮件通知的时候，在系统设置中 jenskin 管理员的邮箱配置成发送的邮箱，email notification 和 extended E-mail notification 邮箱都要配置 且相同。2. 要触发邮箱通知需要在高级设置中 triggers 中添加 success 和 failure 发送人员，才能触发邮箱通知。
 ![](/assets/images/图7.png)
 
 ![](/assets/images/图8.jpeg)
