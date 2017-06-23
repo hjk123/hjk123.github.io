@@ -49,7 +49,7 @@
 我们有两个构建后操作，1. 上传ipa文件到fir.im来下发到测试人员 。 2. 构建成功邮件通知相关开发人员。注意：配置邮件通知的时候，在系统设置中 jenskin 管理员的邮箱配置成发送的邮箱，email notification 和 extended E-mail notification 邮箱都要配置 且配置成一样的。
 ![](/assets/images/图7.png)
 
-![](/assets/images/图8.png)
+![](/assets/images/图8.jpeg)
 
 ## fastlane 简介
 **fastlane** 是一个工具集，常用的工具包括 **deliver：**用来发布应用到 App Store,**match:**通过git来管理项目 certificate，Profile 证书，**pem:** 自动创建通知证书, **sign** 自动创建provisioning 证书，**cert:** 自动创建certificate证书. 等等还有很多其他的工具，可以自己到fastlane 的 [GitHub主页](https://github.com/fastlane/fastlane)查看  我只是列举出了我常用的几种，我这次搭建CI用到了fastlane,也遇到了一些问题，下面这两个问题花费的见识是最多的，记录一下。
@@ -62,7 +62,7 @@
 
 2 . **解决了第一个问题以后出现如下图所示的问题** 
 
- ![](/assets/images/图10.png) 
+ ![](/assets/images/图10.jpeg) 
  
 说无法得到访问 https://git.oschina.net 的 username，因为 match 证书文件和项目文件都在 oschina 上面，而Jenkins 已经配置了https 方式访问 oschina 的账户密码，如果 match 还以 https 方式访问，就没办法拿到账户名和密码，因为 Jenkins 占用了，match 的[管方文档](https://github.com/fastlane/fastlane/tree/master/match)也说了这个问题。我目前的解决方式就是 在 oschina 证书项目中配置RSA公钥，让match 以ssh 的方式访问 oschina ,问题得到解决。 
 
